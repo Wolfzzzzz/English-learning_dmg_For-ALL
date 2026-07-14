@@ -255,7 +255,15 @@ function startOfDay(d) {
 
 function getAnchorDate() {
   let saved = LS.get('anchorDate');
-  if (saved) return new Date(saved);
+  if (saved) {
+    // Migration: old default anchor date (2026-07-13) -> reset to today
+    if (saved === '2026-07-13') {
+      LS.remove('anchorDate');
+      saved = null;
+    } else {
+      return new Date(saved);
+    }
+  }
   // Default: set anchor to today on first visit -> starts from Lesson 1
   var t = getShanghaiDate();
   var first = new Date(t.getFullYear(), t.getMonth(), t.getDate());
