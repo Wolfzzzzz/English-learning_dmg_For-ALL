@@ -207,7 +207,13 @@ body { background: var(--bg); color: var(--text); font-family: var(--font); min-
 
 <!-- Alert overlay -->
 <div id="alertOverlay" class="overlay" onclick="if(event.target===this)closeAlert()">
-
+  <div class="alert-box">
+    <h3 id="alertTitle"></h3>
+    <p id="alertMsg"></p>
+    <div class="btns">
+      <button class="btn-cancel" onclick="closeAlert()">取消</button>
+      <button id="alertConfirmBtn" onclick="closeAlert()">确认</button>
+    </div>
   </div>
 </div>
 
