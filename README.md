@@ -29,6 +29,7 @@ A native macOS application for daily English word dictation practice based on th
 - 📊 **历史追踪**：历史报告、错词本、学习进度可视化
 - 🗣️ **发音朗读**：支持英文单词 TTS 朗读（P2 功能）
 - 🌙 **深色主题**：全局深色界面舒适护眼
+- 🌍 **详细内容**：详细内容请点击查看➡️https://github.com/Wolfzzzzz/English-learning_dmg_For-MacOS
 
 ---
 
